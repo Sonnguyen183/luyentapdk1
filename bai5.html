@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label for="d1">Nhập điểm KT: </label><input type="text" placeholder="điểm KT" id="d1"><br>
+<label for="d2">Nhập điểm giữa kỳ: </label><input type="text" placeholder="điểm giữa kỳ" id="d2"><br>
+<label for="d3">Nhập điểm cuối kỳ: </label><input type="text" placeholder="điểm cuối kỳ" id="d3">
+<input type="button" value="Kiểm tra" onclick="bt5()">
+<p id="outb5">.</p>
+<script>
+    function bt5() {
+        let d1=+document.getElementById("d1").value;
+        let d2=+document.getElementById("d2").value;
+        let d3=+document.getElementById("d3").value;
+        let b5=(d1+d2+d3)/3;
+        if (b5<8){
+            if (b5<6.5){
+                if (b5<3.5){
+                    document.getElementById("outb5").innerText="Học lực yếu";
+                }else{
+                    document.getElementById("outb5").innerText="Học lực trung bình";
+                }
+            } else{
+                document.getElementById("outb5").innerText="Học lực khá";
+            }
+
+        }else{
+            document.getElementById("outb5").innerText="Học lực giỏi";
+        }
+    }
+</script>
+</body>
+</html>
