@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label for="st1">Số thứ nhất: </label><input type="text" placeholder="Nhập số" id="st1"><br>
+<label for="st2">Số thứ hai: </label><input type="text" placeholder="Nhập số" id="st2"><br>
+<label for="st3">Số thứ ba: </label><input type="text" placeholder="Nhập số" id="st3">
+<input type="button" value="Kiểm tra" onclick="bt4()">
+<p id="outb4">.</p>
+<script>
+    function bt4() {
+        let st1=+document.getElementById("st1").value;
+        let st2=+document.getElementById("st2").value;
+        let st3=+document.getElementById("st3").value;
+        if (st1>st2)
+        {
+            if (st1>st3)
+            {
+                document.getElementById("outb4").innerText="max = "+st1;
+            }
+            else {
+                document.getElementById("outb4").innerText="max = "+st3;
+            }
+        }
+        else if (st2>st3){
+            document.getElementById("outb4").innerText="max = "+st2;
+        }
+        else {
+            document.getElementById("outb4").innerText="max = "+st3;
+        }
+    }
+</script>
+</body>
+</html>
