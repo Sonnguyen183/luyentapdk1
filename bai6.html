@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="ds">Nhập Doanh số: </label><input type="text" placeholder="0" id="ds"> VND<br>
+<input type="button" value="Kiểm tra" onclick="bt6()">
+<p id="outb6">.</p>
+<script>
+    function bt6() {
+        let ds=+document.getElementById("ds").value;
+        let tien=(ds*6)/100;
+        document.getElementById("outb6").innerHTML=tien+" VND";
+    }
+</script>
+</body>
+</html>
