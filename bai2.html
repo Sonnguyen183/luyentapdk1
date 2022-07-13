@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="tuoi">nhập tuổi: </label><input type="text" placeholder="nhập tuổi" id="tuoi"><br>
+<input type="button" value="Kiểm tra" onclick="bt2()">
+<p id="outb2">.</p>
+<script>
+    function bt2() {
+        let tuoi=+document.getElementById("tuoi").value;
+        let b2=(tuoi>=15)?tuoi+" :Đủ tuổi học lớp 10":tuoi+" :Không đủ tuổi học lớp 10, thiếu "+(15-tuoi)+" tuổi";
+        document.getElementById("outb2").innerText=b2;
+    }
+</script>
+
+</body>
+</html>
