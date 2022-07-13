@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="a">Nhập a: </label><input type="text" placeholder="Nhập a" id="a"><br>
+<label for="b">Nhập b: </label><input type="text" placeholder="Nhập b" id="b">
+<input type="button" value="Kiểm tra" onclick="bt1()">
+<p id="outb1">.</p>
+<script>
+    function bt1() {
+        let a=+document.getElementById("a").value;
+        let b=+document.getElementById("b").value;
+        let b1=(a%b==0)?"a chia hết cho b":"a không chia hết cho b";
+        document.getElementById("outb1").innerText=b1;
+    }
+
+</script>
+</body>
+</html>
