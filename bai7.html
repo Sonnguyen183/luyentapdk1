@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="h">Tổng số phút gọi: </label><input type="text" placeholder="0" id="h"><br>
+<input type="button" value="Kiểm tra" onclick="bt7()">
+<p id="outb7">.</p>
+<script>
+    function bt7() {
+        let cuoc=+document.getElementById("h").value;
+        let tien1=22000+(cuoc*1000);
+        document.getElementById("outb7").innerHTML=tien1+" VND";
+    }
+</script>
+</body>
+</html>
